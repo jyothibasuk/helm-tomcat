@@ -19,8 +19,8 @@ pipeline {
                     kubernetesDeploy(
                     configs: './k8s',
                     kubeconfigId: 'k8s-cluster',
-                    sh 'helm install ./k8s --generate-name',
-                    ) 
+                    )
+                    sh 'helm install ./k8s --generate-name'
                 }
                 
             }
